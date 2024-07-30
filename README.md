@@ -76,17 +76,17 @@ python Code/Train_VIO.py --BasePath ./Data --CheckPointPath ./Checkpoints_Visual
 
 3. To the test Inertial, Visual, and Visual-Inertial model, run the `Test_inertial.py`, `Test_visual.py`, and `Test_VIO.py` script respectively with the desired parameters:
 
-    - Inertial Odometry 
+- Inertial Odometry 
 ```bash
 python Code/Test_inertial.py --BasePath ./Data --CheckPointPath ./Checkpoints_Inertial --MiniBatchSize 15 --LoadCheckPoint 0
 ```
 
-    - Visual Odometry
+- Visual Odometry
 ```bash
 python Code/Test_Visual.py --BasePath ./Data --CheckPointPath ./Checkpoints_Visual --MiniBatchSize 15 --LoadCheckPoint 0
 ```
 
-    - Visual Inertial Odometry
+- Visual Inertial Odometry
 ```bash 
 python Code/Test_VIO.py --BasePath ./Data --CheckPointPath ./Checkpoints_Visual_Inertial --MiniBatchSize 15 --LoadCheckPoint 0
 ```
