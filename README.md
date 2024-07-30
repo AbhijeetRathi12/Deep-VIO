@@ -51,17 +51,17 @@ cd Deep-VIO-main
 
 2. To start the training process for Inertial, Visual, and Visual-Inertial network, run the `Train_inertial.py`, `Train_visual.py`, and `Train_VIO.py` script respectively with the desired parameters:
 
-    - Inertial Odometry 
+- Inertial Odometry 
 ```bash
 python Code/Train_inertial.py --BasePath ./Data --CheckPointPath ./Checkpoints_Inertial --NumEpochs 300 --MiniBatchSize 15 --LoadCheckPoint 0 --LogsPath ./Logs_Inertial --Split 0.8
 ```
 
-    - Visual Odometry
+- Visual Odometry
 ```bash
 python Code/Train_Visual.py --BasePath ./Data --CheckPointPath ./Checkpoints_Visual --NumEpochs 300 --MiniBatchSize 15 --LoadCheckPoint 0 --LogsPath ./Logs_Visual --Split 0.8
 ```
 
-    - Visual Inertial Odometry
+- Visual Inertial Odometry
 ```bash 
 python Code/Train_VIO.py --BasePath ./Data --CheckPointPath ./Checkpoints_Visual_Inertial --NumEpochs 300 --MiniBatchSize 15 --LoadCheckPoint 0 --LogsPath ./Logs_Visual_Inertial --Split 0.8
 ```
