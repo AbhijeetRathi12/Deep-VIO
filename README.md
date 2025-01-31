@@ -65,14 +65,15 @@ python Code/Train_Visual.py --BasePath ./Data --CheckPointPath ./Checkpoints_Vis
 ```bash 
 python Code/Train_VIO.py --BasePath ./Data --CheckPointPath ./Checkpoints_Visual_Inertial --NumEpochs 300 --MiniBatchSize 15 --LoadCheckPoint 0 --LogsPath ./Logs_Visual_Inertial --Split 0.8
 ```
-... __Arguments__
-    ..* --BasePath: Base path of images and data
-    ..* --CheckPointPath: Path to save checkpoints
-    ..* --NumEpochs: Number of epochs to train
-    ..* --MiniBatchSize: Size of the minibatch
-    ..* --LoadCheckPoint: Load model from latest checkpoint
-    ..* --LogsPath: Path to save logs
-    ..* --Split: Train-validation split ratio
+### Arguments  
+
+- `--BasePath`: Base path of images and data  
+- `--CheckPointPath`: Path to save checkpoints  
+- `--NumEpochs`: Number of epochs to train  
+- `--MiniBatchSize`: Size of the minibatch  
+- `--LoadCheckPoint`: Load model from latest checkpoint  
+- `--LogsPath`: Path to save logs  
+- `--Split`: Train-validation split ratio  
 
 3. To the test Inertial, Visual, and Visual-Inertial model, run the `Test_inertial.py`, `Test_visual.py`, and `Test_VIO.py` script respectively with the desired parameters:
 
@@ -90,11 +91,13 @@ python Code/Test_Visual.py --BasePath ./Data --CheckPointPath ./Checkpoints_Visu
 ```bash 
 python Code/Test_VIO.py --BasePath ./Data --CheckPointPath ./Checkpoints_Visual_Inertial --MiniBatchSize 15 --LoadCheckPoint 0
 ```
-... __Arguments__
-    ..* --BasePath: Base path of images and data
-    ..* --CheckPointPath: Path to save checkpoints
-    ..* --MiniBatchSize: Size of the minibatch
-    ..* --LoadCheckPoint: Load model from latest checkpoint
+### Arguments  
+
+- `--BasePath`: Base path of images and data  
+- `--CheckPointPath`: Path to save checkpoints  
+- `--MiniBatchSize`: Size of the minibatch  
+- `--LoadCheckPoint`: Load model from latest checkpoint  
+
 
 ## Results
 After training, the loss metrics are plotted and saved in the checkpoint path. The plots show the training and validation loss over iterations and epochs.
