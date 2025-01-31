@@ -13,6 +13,17 @@
  
 This repository contains the code and report for a novel deep learning architecture designed to predict relative camera poses using both visual and inertial sensor data. The project integrates Convolutional Neural Networks (CNNs), Long Short-Term Memory (LSTM) networks, and FlowNet to effectively leverage information from image sequences and inertial measurements. This repository contains code to estimates relative pose from only images, only IMU data and both images and IMU data.
 
+|  | **Position Estimation Results Overview** |  |
+|----------|----------|----------|
+| ![Alt1](Images/VO_pos.jpeg) | ![Alt2](Images/IO_pos.jpeg) | ![Alt2](Images/VIO_pos.jpeg) |
+| Visual Odometry  | Inertial Odometry  | Visual-Inertial Odometry  |
+
+
+| **Sample Trajectory Overview** |  |
+|----------|----------|
+| ![Alt1](Images/Traj1.jpeg) | ![Alt2](Images/Traj2.jpeg) |
+| Trajectory 1  |  Trajectory 2  |
+
 ## Key Features
 
 - **Visual Encoder Net**: Processes image data using CNNs.
@@ -100,6 +111,6 @@ python Code/Test_VIO.py --BasePath ./Data --CheckPointPath ./Checkpoints_Visual_
 
 
 ## Results
-After training, the loss metrics are plotted and saved in the checkpoint path. The plots show the training and validation loss over iterations and epochs.
+After training, the loss metrics are plotted and saved in the checkpoint path. The plots showing the training and validation loss over iterations and epochs can be found in **[Report.pdf](./Report.pdf)**.
 
 
