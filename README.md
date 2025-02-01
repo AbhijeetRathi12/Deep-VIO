@@ -1,17 +1,6 @@
 # Deep VIO
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Key Features](#key-features)
-- [Requirements](#requirements)
-- [Usage](#usage)
-- [Results](#results)
-
-
 ## Overview
- 
-This repository contains the code and report for a novel deep learning architecture designed to predict relative camera poses using both visual and inertial sensor data. The project integrates Convolutional Neural Networks (CNNs), Long Short-Term Memory (LSTM) networks, and FlowNet to effectively leverage information from image sequences and inertial measurements. This repository contains code to estimates relative pose from only images, only IMU data and both images and IMU data.
 
 |  | **Position Estimation Results Overview** |  |
 |----------|----------|----------|
@@ -24,6 +13,16 @@ This repository contains the code and report for a novel deep learning architect
 | ![Alt1](Images/Traj1.jpeg) | ![Alt2](Images/Traj2.jpeg) |
 | Trajectory 1  |  Trajectory 2  |
 
+This repository contains the code and report for a novel deep learning architecture designed to predict relative camera poses using both visual and inertial sensor data. The project integrates Convolutional Neural Networks (CNNs), Long Short-Term Memory (LSTM) networks, and FlowNet to effectively leverage information from image sequences and inertial measurements. This repository contains code to estimates relative pose from only images, only IMU data and both images and IMU data.
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Key Features](#key-features)
+- [Requirements](#requirements)
+- [Usage](#usage)
+- [Results](#results)
+  
 ## Key Features
 
 - **Visual Encoder Net**: Processes image data using CNNs.
